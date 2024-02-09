@@ -5,9 +5,7 @@ from math import sqrt
 
 
 def open_and_read_file(file_name):
-    """read from a file
-    add to array
-    """
+    """read from a file add to array"""
     with open(file_name, "r", encoding="utf-8") as file:
         lines = file.readlines()
     number_to_factor = []
@@ -24,9 +22,9 @@ def find_and_times(n):
             break
 
 
-def factor_list(ls):
-    """factor each num in ls"""
-    for i in ls:
+def factor_list(list):
+    """factor each num in list"""
+    for i in list:
         find_and_times(i)
 
 
